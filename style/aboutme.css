@@ -1,0 +1,85 @@
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt_contacts {
+    font-size: 40px;
+}
+
+.cont_li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.li_txt {
+    font-size: 36px;
+}
+
+.icon {
+    transition: 0.3s ease;
+}
+
+.icon:hover {
+   transform: scale(1.3);
+}
+
+.ul_cont {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+   justify-content: center;
+}
+
+.ahead {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    font-family: "Instrument Sans", sans-serif;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.gohome {
+    color: white;
+    font-size: 40px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+}
+
+.hedar {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 2%;
+    border-bottom: 2px white solid;
+}
+
+.txt {
+    width: 40%;
+}
+
+.txt1 {
+    font-size: 64px;
+}
+
+.txt2 {
+    font-size: 56px;
+}
+
+.txt3 {
+    font-size: 40px;
+}
+
+.txt4 {
+    font-size: 32px;
+}

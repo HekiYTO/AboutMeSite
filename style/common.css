@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.45);
+
+}
+
+body {
+    background: linear-gradient(135deg, #005be7 0%, #00318b 50%, #001f4d 100%);
+
+}
+
+p {
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.45);
+    color: white;
+    font-weight: 700;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.structure {
+    width: 1440px;
+    margin: 0 auto;
+}
