@@ -31,3 +31,10 @@ li {
     width: 1440px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1439px) {
+    .structure {
+      width: 320px;
+      margin: 0 auto;
+    }
+}

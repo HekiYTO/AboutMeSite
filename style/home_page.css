@@ -134,3 +134,49 @@
     transform: scale(1.5);
     
 }
+
+/*Phone Styles*/
+
+@media screen and (max-width: 1439px) {
+    .structure {
+      width: 320px;
+    }
+
+
+    .mainbody {
+        flex-direction: column;
+        justify-content:start;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .myhobby {
+        margin: 0;
+        max-width: 80vw;
+    }
+
+    .headerbutton {
+        margin: 5px 0;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .links {
+        flex-direction: row;
+        padding-left: 0;
+        flex-wrap: wrap;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .linksa {
+        padding: 30px 20px;
+    }
+}

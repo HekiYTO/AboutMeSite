@@ -82,3 +82,43 @@
     box-shadow: 2px 2px rgba(0, 0, 0, 0.15), 3px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*Phone Styles*/
+
+@media screen and (max-width: 1439px) {
+     .structure {
+       width: 320px;
+     }
+
+     .card {
+        height: 100%;
+     }
+
+     .button-card {
+        margin: 10px auto;
+        font-size: 20px;
+     }
+
+     .inner {
+        margin: 0;
+        flex-direction: column;
+     }
+
+     .txt {
+        margin: 10px;
+     }
+     
+     .iframe {
+        margin: 0 auto;
+     }
+
+     .info {
+        margin: 0;
+     }
+
+     .imginner {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+     }
+    
+}
