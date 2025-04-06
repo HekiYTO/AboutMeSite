@@ -82,6 +82,25 @@
     box-shadow: 2px 2px rgba(0, 0, 0, 0.15), 3px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.gohome {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.gohome:hover {
+    transform: scale(1.2);
+}
+
+.gohome:hover::first-letter {
+    font-size: 40px;
+    color: #575dfa;
+}
+
 /*Phone Styles*/
 
 @media screen and (max-width: 1439px) {

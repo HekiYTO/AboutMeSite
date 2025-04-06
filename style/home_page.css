@@ -15,13 +15,7 @@
     font-family: "Instrument Sans", sans-serif;
     cursor: pointer;
     display: inline-block;
-    transition: 0.5s ease;
-}
-
-.headerbutton {
-    border-top: 2px solid white;
-    padding: 10px 0;
-    border-bottom: 2px solid white;
+    transition: all 0.5s ease;
 }
 
 .ahead:hover {
@@ -32,6 +26,19 @@
     font-size: 40px;
     color: #575dfa;
 }
+
+.nahead {
+    border-bottom: 3px solid rgba(9, 111, 255, 0.251);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.headerbutton {
+    transition: all 0.1s ease;
+    padding: 10px 0;
+}
+
+
 
 .structure {
     width: 1440px;
@@ -135,6 +142,10 @@
     
 }
 
+.tel_only {
+    display: none;
+}
+
 /*Phone Styles*/
 
 @media screen and (max-width: 1439px) {
@@ -178,5 +189,23 @@
 
     .linksa {
         padding: 30px 20px;
+    }
+
+    .pabout {
+        font-size: 48px;
+    }
+
+    .ahead {
+        background-color: #575dfa;
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+
+    .pc_only {
+        display: none;
+    }
+
+    .tel_only {
+        display:inline-block;
     }
 }

@@ -85,6 +85,25 @@ main {
     font-size: 32px;
 }
 
+.gohome {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: "Instrument Sans", sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.gohome:hover {
+    transform: scale(1.2);
+}
+
+.gohome:hover::first-letter {
+    font-size: 40px;
+    color: #575dfa;
+}
+
 /*Phone Styles*/
 
 @media screen and (max-width: 1439px) {
@@ -112,4 +131,6 @@ main {
     .txt_contacts {
         text-align: center;
     }
+
+  
 }
