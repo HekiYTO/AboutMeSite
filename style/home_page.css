@@ -14,18 +14,22 @@
     font-weight: 700;
     font-family: "Instrument Sans", sans-serif;
     cursor: pointer;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.headerbutton {
     border-top: 2px solid white;
     padding: 10px 0;
     border-bottom: 2px solid white;
-    transition: 0.5s ease;
 }
 
 .ahead:hover {
     transform: scale(1.2);
 }
 
-.ahead::first-letter {
-    font-size: 44px;
+.ahead:hover::first-letter {
+    font-size: 40px;
     color: #575dfa;
 }
 
@@ -61,6 +65,7 @@
 }
 
 .myhobby {
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.15), 8px 8px rgba(0, 0, 0, 0.15);
     margin-left: 80px;
     background-color: #0077ff2d;
     width: 520px ;
