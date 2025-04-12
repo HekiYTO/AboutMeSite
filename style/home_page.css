@@ -93,7 +93,7 @@
 }
 
 .hobbyul:hover {
-   
+    cursor: default;
     transform: scale(1.5);
     color: #7d81ff;
 }
