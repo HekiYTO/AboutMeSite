@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/feedback.css">
+    <title>Фидбек</title>
+</head>
+<body class="body light-theme structure">
+    <header>
+        <div class="header">
+            <div class="headerbutton"><a href="../ru/myworksru.html" class="ahead">Мои работы</a></div>
+            <div class="headerbutton pc_only"><p href="" class="nahead">HekitYTO</p></div> 
+            <div class="headerbutton"><a href="../ru/aboutmeru.html" class="ahead">Обо мне</a></div>
+        </div>
+
+        <div class="burger-menu">
+            <div class="burger-inner">
+                <div class="burger-head">
+                    <button onclick="active()" class="burgerimg"><img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="" height="64" width="64" ></button>
+                    <div class="burgerbutton"><p class="burgerp">HekitYTO</p></div>
+                </div>
+            <div class="burgeroptions">
+                <div class="burgerbutton"><a href="../ru/myworksru.html" class="burgera">Мои работы</a></div>
+                <div class="burgerbutton"><a href="../ru/aboutmeru.html" class="burgera">Обо мне</a></div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <h1 class="h1m">Форма обратной связи</h1>
+        <div class="form">
+            <form class="form1" action="">
+                <label class="label_f1" for="name1">Введите свое имя</label>
+                <input class="input_f1" id="name1" type="text" placeholder="Имя">
+                <label class="label_f1" for="email1">Введите вашу почту</label>
+                <input class="input_f1" id="email1" type="email" placeholder="Электронная почта">
+                <label class="label_f1" for="tel1">Введите номер ваш номер телефона</label>
+                <input class="input_f1" id="tel1" type="tel" placeholder="Телефонный номер">
+                <label class="label_f1" for="message1">Введите свое сообщение</label>
+                <textarea class="textarea_f1" name="message1" id="message1" placeholder="Ваше сообщения"></textarea>
+                <button class="button-card-footer" type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="pfooter">HekitYTO 2025 Copyright</p>
+        </div>
+        <div class="language">
+            <a href="../feedback.html"><img src="../icons/92403_kingdom_united_icon.png" alt="English_language"></a>
+            <button class="theme button-card-footer" onclick="run()">Тёмная тема</button>
+        </div>
+    </footer>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/form.js"></script>
+    <script src="../scripts/burgermenu.js"></script>
+</body>
+</html>

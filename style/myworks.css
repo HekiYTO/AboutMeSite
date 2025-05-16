@@ -1,9 +1,11 @@
 .ahead {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     font-weight: 700;
     font-family: "Instrument Sans", sans-serif;
-    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s ease;
 }
 
 .gohome {
@@ -101,6 +103,101 @@
     color: #575dfa;
 }
 
+.tel_only {
+    display: none;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px ;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerbutton {
+    transition: all 0.1s ease;
+    padding: 10px 0;
+}
+
+.ahead:hover {
+    transform: scale(1.2);
+}
+
+.ahead:hover::first-letter {
+    font-size: 40px;
+    color: #575dfa;
+}
+
+.nahead {
+    border-bottom: 3px solid rgba(9, 111, 255, 0.251);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.footer {
+    margin: 50px auto;
+    width: 35%;
+    border-top: 1px solid white;
+}
+
+.pfooter {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.dark-theme {
+    background: rgb(18, 24, 24);
+    color: white;
+}
+
+.dark-theme .button-card {
+    background: rgb(25, 35, 35);
+    color: white;
+}
+
+.dark-theme .header {
+    background-color: rgb(18, 24, 24);
+    color: white;
+}
+
+.dark-theme .card {
+    background: rgb(25, 35, 35);
+    color: white;
+}
+
+.dark-theme .button-card-footer {
+    background: rgb(25, 35, 35);
+    color: white;
+}
+
+.button-card-footer {
+    background-color: #252395;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: "Instrument Sans", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.button-card-footer:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15), 3px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /*Phone Styles*/
 
 @media screen and (max-width: 1439px) {
@@ -142,6 +239,44 @@
         margin: 0 auto;
      }
     
+     .links {
+        flex-direction: row;
+        padding-left: 0;
+        flex-wrap: wrap;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 
+    .linksa {
+        padding: 30px 20px;
+    }
+
+    .pabout {
+        font-size: 48px;
+    }
+
+    .ahead {
+        background-color: #575dfa;
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+
+    .pc_only {
+        display: none;
+    }
+
+    .tel_only {
+        display:inline-block;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .footer {
+        width: auto;
+    }
 
 }

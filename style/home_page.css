@@ -142,7 +142,44 @@
     
 }
 
-.tel_only {
+.language {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-card {
+    background-color: #252395;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: "Instrument Sans", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.button-card:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15), 3px 3px rgba(0, 0, 0, 0.15), 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dark-theme {
+    background: rgb(18, 24, 24);
+    color: white;
+}
+
+.dark-theme .button-card {
+    background: rgb(25, 35, 35);
+    color: white;
+}
+
+.dark-theme .header {
+    background-color: rgb(18, 24, 24);
+    color: white;
+}
+
+.burger-menu {
     display: none;
 }
 
@@ -161,8 +198,7 @@
     }
 
     .header {
-        flex-direction: column;
-        height: auto;
+       display: none;
     }
 
     .myhobby {
@@ -201,11 +237,87 @@
         padding: 5px 10px;
     }
 
-    .pc_only {
-        display: none;
+    .burger-menu {
+        border: #7d81ff solid 2px;
+        transform: translateX(100%);
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #575dfa;
+        position: fixed;
+        
     }
 
-    .tel_only {
-        display:inline-block;
+    .burger-menu.active {
+        transform: translateX(0);
+        transition: all 0.5s ease;
     }
+
+    .burger-inner {
+        margin-left: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burgerp {
+        padding-top: 15px;
+        margin-right: 2vh;
+        font-size: 70px;
+        border-bottom: 5px solid white;
+        color: white;
+        font-weight: 700;
+        font-family: "Instrument Sans", sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+    .burgeroptions {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: 3vh;
+        margin-top: 2vh;
+    }
+
+    .burgera {
+        background-color: #5772fa71;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        margin-top: 20px;
+        font-family: "Instrument Sans", sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+    .burger-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .burgerimg.active {
+        transform: translateX(0); 
+    }
+
+    .burgerimg {
+        position: relative;
+        margin-top: 2vh;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        transform: translateX(-100%); 
+    }
+
 }

@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/home_page.css">
+
     <title>HekitYTO</title>
 </head>
-<body>
+<body class="body light-theme">
 <div class="structure">
 
     <header>
         <div class="header">
-            <div class="headerbutton tel_only"><p href="" class="nahead">HekitYTO</p></div> 
             <div class="headerbutton"><a href="myworks.html" class="ahead">My works</a></div>
             <div class="headerbutton pc_only"><p href="" class="nahead">HekitYTO</p></div> 
             <div class="headerbutton"><a href="aboutme.html" class="ahead">About me</a></div>
         </div>
+
+        <div class="burger-menu">
+            <div class="burger-inner">
+                <div class="burger-head">
+                    <button onclick="active()" class="burgerimg"><img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="" height="64" width="64" ></button>
+                    <div class="burgerbutton"><p class="burgerp">HekitYTO</p></div>
+                </div>
+            <div class="burgeroptions">
+                <div class="burgerbutton"><a href="myworks.html" class="burgera">My works</a></div>
+                <div class="burgerbutton"><a href="aboutme.html" class="burgera">About me</a></div>
+            </div>
+            </div>
+        </div>
     </header>
 <main>
-    <div class="line"></div>
+    <!---<div class="line"></div>-->
     <div class="mainbody">
         <p class="pabout">Hi, my name is Nikita and im working with</p>
         <div class="myhobby">
@@ -49,10 +62,14 @@
         <div class="footer">
             <p class="pfooter">HekitYTO 2025 Copyright</p>
         </div>
+        <div class="language">
+            <a href="./ru/indexru.html"><img src="icons/92303_russia_icon.png" alt="russian_language"></a>
+            <button class="theme button-card">Dark mode</button>
+        </div>
     </footer>
 
 </div>
-    
-    
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burgermenu.js"></script>
 </body>
 </html>

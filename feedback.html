@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/feedback.css">
+    <title>Feedback</title>
+</head>
+<body class="body light-theme structure">
+    <header>
+        <div class="header">
+            <div class="headerbutton"><a href="myworks.html" class="ahead">My works</a></div>
+            <div class="headerbutton pc_only"><p href="" class="nahead">HekitYTO</p></div> 
+            <div class="headerbutton"><a href="aboutme.html" class="ahead">About me</a></div>
+        </div>
+
+        <div class="burger-menu">
+            <div class="burger-inner">
+                <div class="burger-head">
+                    <button onclick="active()" class="burgerimg"><img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="" height="64" width="64" ></button>
+                    <div class="burgerbutton"><p class="burgerp">HekitYTO</p></div>
+                </div>
+            <div class="burgeroptions">
+                <div class="burgerbutton"><a href="myworks.html" class="burgera">My works</a></div>
+                <div class="burgerbutton"><a href="aboutme.html" class="burgera">About me</a></div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <h1 class="h1m">Feedback form</h1>
+        <div class="form">
+            <form class="form1" action="">
+                <label class="label_f1" for="name1">Enter your name</label>
+                <input class="input_f1" id="name1" type="text" placeholder="name">
+                <label class="label_f1" for="email1">Enter your Email</label>
+                <input class="input_f1" id="email1" type="email" placeholder="email">
+                <label class="label_f1" for="tel1">Enter your phone number</label>
+                <input class="input_f1" id="tel1" type="tel" placeholder="telephone number">
+                <label class="label_f1" for="message1">Enter your message</label>
+                <textarea class="textarea_f1" name="message1" id="message1" placeholder="Your message"></textarea>
+                <button class="button-card-footer" onclick="run()" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="pfooter">HekitYTO 2025 Copyright</p>
+        </div>
+        <div class="language">
+            <a href="./ru/feedbackru.html"><img src="icons/92303_russia_icon.png" alt="russian_language"></a>
+            <button class="theme button-card-footer">Dark mode</button>
+        </div>
+    </footer>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+</body>
+</html>

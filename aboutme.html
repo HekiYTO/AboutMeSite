@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="style/common.css">
     <title>About me</title>
 </head>
-<body>
+<body class="body light-theme">
     <div class="structure">
-            <header class="hedar"> 
-                <a class="gohome" href="index.html">Back</a>
-                <h1 class="ahead">About me</h1>
-            </header>
-            <main>
+        <header>
+        <div class="header">
+            <div class="headerbutton"><a href="myworks.html" class="ahead">My works</a></div>
+            <div class="headerbutton pc_only"><p href="" class="nahead">HekitYTO</p></div> 
+            <div class="headerbutton"><a href="aboutme.html" class="ahead">About me</a></div>
+        </div>
+
+        <div class="burger-menu">
+            <div class="burger-inner">
+                <div class="burger-head">
+                    <button onclick="active()" class="burgerimg"><img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="" height="64" width="64" ></button>
+                    <div class="burgerbutton"><p class="burgerp">HekitYTO</p></div>
+                </div>
+            <div class="burgeroptions">
+                <div class="burgerbutton"><a href="myworks.html" class="burgera">My works</a></div>
+                <div class="burgerbutton"><a href="aboutme.html" class="burgera">Home</a></div>
+            </div>
+            </div>
+        </div>
+    </header>
+       <div class="line"></div> 
+    <main>
+        
                     <div class="txt">
                         <p class="txt1 txt-g">My name is Nikita</p>
                         <p class="txt2 txt-g">I’m 16 years old</p>
@@ -26,10 +44,26 @@
                         <ul class="ul_cont">
                             <li ><a class="cont_li" href="https://discord.gg/UFzfhtZskX"><img class="icon" width="96" src="icons/Discord_color.png" alt=""><p class="li_txt">Discord</p></a></li>
                             <li ><a class="cont_li" href="https://t.me/NekitSkrunnik"><img class="icon" width="96" src="icons/Telegram_color.png" alt=""><p class="li_txt">Telegram</p></a></li>
-                            <li ><a class="cont_li" href="mailto:hekitytoriginal@gmail.com"><img class="icon" width="96" src="icons/Gmail.png" alt=""><p class="li_txt" >Mail</p ></a></li>
+                            <li ><a class="cont_li" href="mailto:hekitytoriginal2@gmail.com"><img class="icon" width="96" src="icons/Gmail.png" alt=""><p class="li_txt" >Mail</p ></a></li>
+                            <li><a class="cont_li" href="feedback.html"><img class="icon" width="96" src="icons/feedback.png" alt="feedback"><p class="li_txt">Feedback</p></a></li>  
                         </ul>
                     </div>
             </main>
+            <footer>
+                <div class="footer">
+                    <p class="pfooter">HekitYTO 2025 Copyright</p>
+                </div>
+                <div class="language">
+                    <a href="./ru/indexru.html"><img src="icons/92303_russia_icon.png" alt="russian_language"></a>
+                    <button class="theme button-card">Dark mode</button>
+                </div>
+            </footer>
     </div>
+   
+
+</div>
+    
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burgermenu.js"></script>
 </body>
 </html>

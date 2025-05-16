@@ -12,6 +12,7 @@ a {
 }
 
 body {
+    transition: all 0.5s ease;  
     background: linear-gradient(135deg, #005be7 0%, #00318b 50%, #001f4d 100%);
 
 }
@@ -32,9 +33,107 @@ li {
     margin: 0 auto;
 }
 
+.language {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-menu {
+    display: none;
+}
+
+
 @media screen and (max-width: 1439px) {
     .structure {
       width: 320px;
       margin: 0 auto;
     }
+
+       .burger-menu {
+        border: #7d81ff solid 2px;
+        transform: translateX(100%);
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #575dfa;
+        position: fixed;
+        
+    }
+
+    .burger-menu.active {
+        transform: translateX(0);
+        transition: all 0.5s ease;
+    }
+
+    .burger-inner {
+        margin-left: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burgerp {
+        padding-top: 15px;
+        margin-right: 2vh;
+        font-size: 70px;
+        border-bottom: 5px solid white;
+        color: white;
+        font-weight: 700;
+        font-family: "Instrument Sans", sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+    .burgeroptions {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: 3vh;
+        margin-top: 2vh;
+    }
+
+    .burgera {
+        background-color: #5772fa71;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        margin-top: 20px;
+        font-family: "Instrument Sans", sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+    .burger-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .burgerimg.active {
+        transform: translateX(0); 
+    }
+
+    .burgerimg {
+        position: relative;
+        margin-top: 2vh;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        transform: translateX(-100%); 
+    }
+
+    .header {
+        display: none !important; 
+    }
+    
 }
